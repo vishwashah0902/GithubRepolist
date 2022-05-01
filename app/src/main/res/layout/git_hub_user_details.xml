@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="githubUserList"
+            type="com.example.githubusers.data.db.entities.GithubRepo" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            tools:context=".presentation.lead.LeadDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.login}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/node_id" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.node_id}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avatar_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.avatar_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gravatar_id" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.gravatar_id}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/html_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.html_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/followers_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.followers_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qists_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.gists_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/starred_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.starred_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subscription_urls" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.subscriptions_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organization_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/typeOfLoan"
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.organizations_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repos_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.repos_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/events_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.events_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/received_events_url" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.received_events_url}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_subheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/details_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={githubUserList.type}" />
+
+                <com.google.android.material.textview.MaterialTextView style="@style/view_line" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</layout>

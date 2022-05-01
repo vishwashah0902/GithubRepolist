@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GitHubUsers</string>
+    <string name="github_user_list">Github User List</string>
+    <string name="user_details">User Details</string>
+    <string name="node_id">Node ID</string>
+    <string name="login">Login</string>
+    <string name="avatar_url">Avatar URL</string>
+    <string name="gravatar_id">Gravatar ID</string>
+    <string name="url">URL</string>
+    <string name="html_url">HTML URL</string>
+    <string name="followers_url">Followers URL</string>
+    <string name="qists_url">Qists URL</string>
+    <string name="starred_url">Starred URL</string>
+    <string name="subscription_urls">Subscription URLs</string>
+    <string name="organization_url">Organization URL</string>
+    <string name="repos_url">Repos URL</string>
+    <string name="events_url">Events URL</string>
+    <string name="received_events_url">Received Events URL</string>
+    <string name="type">Type</string>
+    <string name="site_admin">Site Admin</string>
+    <string name="swipe_to_reload">Swipe to Reload</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00574B</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="bg_gradient_start">#3e7250</color>
+    <color name="bg_gradient_end">#002000</color>
+    <color name="bg_button_login">#003d00</color>
+    <color name="image_background">#CFD8DC</color>
+    <color name="light_grey">#a6a6a6</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#919191</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="approved">#006600</color>
+    <color name="darkBlue">#043787</color>
+    <color name="colorText">#000000</color>
+    <color name="colorYellow">#FDD835</color>
+    <color name="iconColor">#00574B</color>
+    <color name="list_click_selector">#664DD0E1</color>
+    <color name="red">#990000</color>
+
+</resources>
